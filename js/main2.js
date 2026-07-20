@@ -3,7 +3,7 @@ if (top.location != location) {
 }
 function reopen() {
   window.open(
-    "https://script.google.com/macros/s/AKfycbxQOW9dVbihOmyl1JelG3Z2pUNr5pKd7xXlNOYRCEQhzVQr43Nxt8LXAV2sFxfkXcE5/exec",
+    "https://script.google.com/macros/s/AKfycby7kh593RzQKR7eHrITF0ZWt8JXuJRdI4Ain5N2M6oBntmpKU1mK43a_J3RWBzRJKfW/exec",
     "",
     "blankmenubar=no,status=no,toolbar=noresizable=no,width=350,height=370,titlebar=no,alwaysRaised=yes"
   );
