@@ -2,12 +2,25 @@ if (top.location != location) {
   top.location.href = location.href;
 }
 function reopen() {
-  window.open(
-    "https://script.google.com/macros/s/AKfycby7kh593RzQKR7eHrITF0ZWt8JXuJRdI4Ain5N2M6oBntmpKU1mK43a_J3RWBzRJKfW/exec",
-    "",
-    "blankmenubar=no,status=no,toolbar=noresizable=no,width=350,height=370,titlebar=no,alwaysRaised=yes"
-  );
+    // Open a blank new tab
+    const newTab = window.open('about:blank', '_blank');
+    
+    if (newTab) {
+        // Fetch the HTML content from the CDN
+        fetch('https://cdn.jsdelivr.net/gh/vihaanb0715-alt/youareanidiot@main/popup.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+                // Write and render the content into the new tab
+                newTab.document.open();
+                newTab.document.write(htmlContent);
+                newTab.document.close();
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    } else {
+        alert('Popup blocked! Please allow popups for this site.');
+    }
 }
+
 function spam() {
   for (var i = 0; i < 10; i++) {
     reopen();
