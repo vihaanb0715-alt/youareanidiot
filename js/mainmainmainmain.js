@@ -7,7 +7,7 @@ function reopen() {
 
     if (newTab) {
         // Fetch the HTML content
-        fetch('https://cdn.jsdelivr.net/gh/vihaanb0715-alt/youareanidiot@main/popup.html')
+        fetch('https://cdn.jsdelivr.net/gh/vihaanb0715-alt/youareanidiot@main/popuppopuppopup.html')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
